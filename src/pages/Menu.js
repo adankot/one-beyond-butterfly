@@ -11,7 +11,7 @@ const Menu = () => {
     <div className="center-page">
       <div className="app-title">Build your cloud!</div>
       <div>
-        <img alt="beauty" src="/butterfly_gif.gif"></img>
+        <img alt="beauty" src="butterfly_gif.gif"></img>
         <div className="description">
           Fly your app, into the cloud with the help of the <b>Butterfly</b>{" "}
           team!
