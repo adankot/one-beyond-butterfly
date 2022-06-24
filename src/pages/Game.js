@@ -61,47 +61,59 @@ const Game = () => {
 		checkWinConditionAchieved(task);
 	}, [task]);
 
-	const pickService = ({ cost, ...service }) => () => {
-		const status = task.status;
-		const newCredit = task.credits - cost;
-		const services = [service, ...task.services];
-		Object.keys(service).map(key => status[key] = status[key] + service[key]);
-		setTask({ ...task, services, credits: newCredit, status })
-	}
+  const pickService =
+    ({ cost, ...service }) =>
+    () => {
+      const status = task.status;
+      const newCredit = task.credits - cost;
+      const services = [service, ...task.services];
+      Object.keys(service).map((key) => (status[key] = status[key] + service[key]));
+      setTask({ ...task, services, credits: newCredit, status });
+    };
 
-	return (
-		<div className="App">
-			<div>
-				<div className="box">
-					<div className="task-service-container">
-						services
-					</div>
-					<div className="status-bar">
-						<StatusBar status={task.status.speed} name='speed' />
-						<StatusBar status={task.status.security} name='security' />
-						<StatusBar status={task.status.stability} name='stability' />
-					</div>
-				</div>
-				<div className="service-container">
-					<div>AWS box</div>
-					{serviceTypes.aws.map((service) => (
-						<Service key={service.name} onClick={pickService(service)} service={service}>
-							{service.name}
-						</Service>
-					))}
-				</div>
-				<div className="service-container">
-					<div>Azure box</div>
-					{serviceTypes.azure.map((service) => (
-						<Service key={service.name} onClick={pickService(service)} service={service}>
-							{service.name}
-						</Service>
-					))}
-				</div>
-			</div>
-			<NotificationContainer />
-		</div>
-	);
+  return (
+    <div className="App">
+      <div>
+        <div className="box">
+          <div className="task-service-container">services</div>
+          <div className="status-bar-services-wrapper">
+            <div className="status-bar-services">
+              {[...task.services].slice(0, 6).map((service) => (
+                <div key={service.name} className="status-bar-services-item">
+                  <Service key={service.name} service={service}>
+                    {service.name}
+                  </Service>
+                </div>
+              ))}
+            </div>
+
+            <div className="status-bar">
+              <StatusBar status={task.status.speed} name="speed" />
+              <StatusBar status={task.status.security} name="security" />
+              <StatusBar status={task.status.stability} name="stability" />
+            </div>
+          </div>
+        </div>
+        <div className="service-container">
+          <div>AWS box</div>
+          {serviceTypes.aws.map((service) => (
+            <Service key={service.name} onClick={pickService(service)} service={service}>
+              {service.name}
+            </Service>
+          ))}
+        </div>
+        <div className="service-container">
+          <div>Azure box</div>
+          {serviceTypes.azure.map((service) => (
+            <Service key={service.name} onClick={pickService(service)} service={service}>
+              {service.name}
+            </Service>
+          ))}
+        </div>
+      </div>
+      <NotificationContainer />
+    </div>
+  );
 };
 
 export default Game;
