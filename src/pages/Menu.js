@@ -1,4 +1,5 @@
 import React, { useCallback, useContext } from "react";
+import { Button } from "../components/Button";
 import { NavigagtionContext } from "../contexts/NavigationContext";
 import "./Menu.css";
 
@@ -20,6 +21,7 @@ const Menu = () => {
       <button className="button-22" onClick={handlePLayClick}>
         Play
       </button>
+      <Button onClick={() => {}}></Button>
     </div>
   );
 };

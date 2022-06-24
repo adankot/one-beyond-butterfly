@@ -1,7 +1,7 @@
 module.exports = {
   aws: [
     {
-      name: "ec2",
+      name: "EC2",
       icon: "/ec2.png",
       cost: 1,
       stability: 1,
@@ -10,7 +10,7 @@ module.exports = {
 	  text: "Elastic Compute v2"
     },
     {
-      name: "rds",
+      name: "RDS",
       icon: "/rds.webp",
       cost: 1,
       stability: 1,
@@ -19,7 +19,7 @@ module.exports = {
 	  text: "Relational Database Service"
     },
     {
-      name: "cloudfront",
+      name: "CF",
       icon: "/cloudfront.webp",
       cost: 2,
       speed: 3,
@@ -28,7 +28,7 @@ module.exports = {
 	  text: "CloudFront"
     },
     {
-      name: "s3",
+      name: "S3",
       icon: "/s3.png",
       cost: 1,
       speed: 2,
@@ -48,7 +48,7 @@ module.exports = {
 	  text: "Virtual Machine"
     },
     {
-      name: "cosmosDB",
+      name: "CDB",
       icon: "/cosmos_db.svg",
       cost: 1,
       stability: 1,
@@ -57,7 +57,7 @@ module.exports = {
 	  text: "CosmosDB"
     },
     {
-      name: "cdn",
+      name: "CDN",
       icon: "/cdn.jpeg",
       cost: 2,
       speed: 3,

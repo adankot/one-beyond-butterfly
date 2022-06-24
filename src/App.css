@@ -57,6 +57,7 @@
 }
 
 .service-container {
+  position: relative;
   margin: 15px;
   padding: 5px;
   border: black 1px solid;
@@ -66,6 +67,7 @@
 }
 
 .task-service-container {
+  position: relative;
   margin: 15px;
   padding: 5px;
   border: black 1px solid;
@@ -119,4 +121,31 @@
   flex-wrap: nowrap;
   justify-content: center;
   width: 35%;
+}
+
+.status-bar-services-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.status-bar-services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+
+.status-bar-services-item {
+  width: 50px;
+  height: 50px;
+  border: 1 solid #282c34;
+}
+
+.service-name {
+  position: absolute;
+  top: 15px;
+  width: 50px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
 }
