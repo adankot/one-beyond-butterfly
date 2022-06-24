@@ -78,7 +78,7 @@ const Game = () => {
     <div className="App">
       <div>
         <div className="box">
-          <div className="task-service-container">services</div>
+          <div className="task-service-container">{task.title} - credits: {task.credits}</div>
           <div className="status-bar-services-wrapper">
             <div className="status-bar-services">
               {[...Array(6).keys()].map((key) => (
