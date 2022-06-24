@@ -6,7 +6,7 @@ const Menu = () => {
 
   const handlePLayClick = useCallback(() => navigate('game'), [navigate]);
 
-  return <div>
+  return <div className="menu">
     <button onClick={handlePLayClick}>Play</button>
   </div>;
 };
