@@ -43,3 +43,35 @@
   border: black 1px solid;
   border-radius: 10px;
 }
+
+.task-container {
+  margin: 15px;
+  padding: 15px;
+  border: black 1px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+}
+
+.service {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+}
+
+.status-bar {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40%;
+}
