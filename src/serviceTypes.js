@@ -7,6 +7,7 @@ module.exports = {
       stability: 1,
       speed: 1,
       security: 0,
+	  test: "Elastic Compute v2"
     },
     {
       name: "rds",
@@ -15,6 +16,7 @@ module.exports = {
       stability: 1,
       speed: 1,
       security: 0,
+	  test: "Relational Database Service"
     },
     {
       name: "cloudfront",
@@ -23,6 +25,7 @@ module.exports = {
       speed: 3,
       stability: 2,
       security: 1,
+	  test: "CloudFront"
     },
     {
       name: "s3",
@@ -31,6 +34,7 @@ module.exports = {
       speed: 2,
       stability: 2,
       security: 0,
+	  test: "Scalable Storage Service v2"
     },
   ],
   azure: [
@@ -41,6 +45,7 @@ module.exports = {
       stability: 1,
       speed: 1,
       security: 0,
+	  test: "Virtual Machine"
     },
     {
       name: "cosmosDB",
@@ -49,6 +54,7 @@ module.exports = {
       stability: 1,
       speed: 1,
       security: 0,
+	  test: "CosmosDB"
     },
     {
       name: "cdn",
@@ -57,22 +63,25 @@ module.exports = {
       speed: 3,
       stability: 2,
       security: 1,
+	  test: "Content Delivery Network"
     },
     {
-      name: "App Service Plan",
+      name: "ASP",
       icon: "/app_service_plan.png",
       cost: 1,
       speed: 4,
       stability: 4,
       security: 2,
+	  test: "Application Services Plan"
     },
     {
-      name: "App Service Environment",
+      name: "ASE",
       icon: "app_service_environment.png",
       cost: 10,
       speed: 5,
       stability: 4,
       security: 2,
+	  test: "Application Service Environment"
     },
   ],
 };
