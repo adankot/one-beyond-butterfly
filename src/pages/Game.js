@@ -55,9 +55,9 @@ const Game = () => {
 						services
 					</div>
 					<div className="status-bar">
-						<StatusBar status={task.status.speed} />
-						<StatusBar status={task.status.security} />
-						<StatusBar status={task.status.stability} />
+						<StatusBar status={task.status.speed} name='speed' />
+						<StatusBar status={task.status.security} name='security' />
+						<StatusBar status={task.status.stability} name='stability' />
 					</div>
 				</div>
 				<div className="service-container">

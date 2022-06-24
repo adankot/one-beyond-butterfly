@@ -1,28 +1,24 @@
 .progress-bar {
-  width: 100px;
+  height: 30px;
 }
 
-.bar-container {
-  background-color: lightblue;
-}
-
-.security {
-  background-color: red;
-  margin: 5px;
-}
-
-.speed {
+.progress {
   background-color: green;
   margin: 5px;
   height: 25px;
+  position: relative;
+  top: -30px;
 }
 
-.stability {
-  background-color: blue;
+.name {
   margin: 5px;
+  height: 25px;
+  position: relative;
+  top: -60px;
 }
 
-.label {
-  font-size: 20px;
-  color: white;
+.empty {
+  background-color: gray;
+  margin: 5px;
+  height: 25px;
 }
