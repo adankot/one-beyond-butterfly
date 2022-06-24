@@ -38,13 +38,13 @@ module.exports = {
 			stability: 2,
 			security: 1,
 		},
-		appServicePlan: {
+		"App Service Plan": {
 			credit: 1,
 			speed: 4,
 			stability: 4,
 			security: 2
 		},
-		appServiceEnvironment: {
+		"App Service Environment": {
 			credit: 10,
 			speed: 5,
 			stability: 4,
