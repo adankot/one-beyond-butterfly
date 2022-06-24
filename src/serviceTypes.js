@@ -6,7 +6,7 @@ module.exports = {
       cost: 1,
       stability: 1,
       speed: 1,
-      security: 0,
+      security: 1,
       text: "Elastic Compute v2",
     },
     {
@@ -24,7 +24,7 @@ module.exports = {
       cost: 2,
       speed: 3,
       stability: 2,
-      security: 1,
+      security: 2,
       text: "CloudFront",
     },
     {
