@@ -1,7 +1,7 @@
 :root {
   --ob-green: #338855;
-  --ob-yellow: #CFFF00; 
-  
+  --ob-yellow: #CFFF00;
+
 /*
   #CFFF00 #FFFFFF #338855 #E6E1D7 #000000
   yellow, white, green, off-white and black from new colour branding
@@ -17,14 +17,14 @@
   margin: 5px;
   height: 25px;
   position: relative;
-  top: -30px;
+  top: -60px;
 }
 
 .name {
   margin: 5px;
   height: 25px;
   position: relative;
-  top: -60px;
+  top: -90px;
   color: white;
   style: bold;
 }
@@ -33,4 +33,12 @@
   background-color: gray;
   margin: 5px;
   height: 25px;
+}
+
+.requirement {
+  background-color: darkgray;
+  margin: 5px;
+  height: 25px;
+  position: relative;
+  top: -30px;
 }

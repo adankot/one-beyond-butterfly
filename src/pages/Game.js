@@ -35,7 +35,10 @@ const Game = () => {
     }
     // check IAM bonus
     // check ONE BEYOND bonus
-    if (!task.bonuses.find((name) => name === 'oneBeyond') && task.services.filter((service) => service.name === 'ec2').length >= 2) {
+		if (!task.bonuses.find(name => name === 'oneBeyond') && Object.keys(task.requirements).reduce((acc, key) => {
+			if (task.requirements[key] + 1 > task.status[key]) acc = false;
+			return acc;
+		}, true)) {
       NotificationManager.success('You are above at least 1 point in every requirement (double your points)', 'The ONE BEYOND Bonus', 3000);
       setTask({ ...task, bonuses: [...task.bonuses, 'oneBeyond'] });
     }
@@ -53,7 +56,7 @@ const Game = () => {
         task.status.stability - task.requirements.stability > 0 ? task.status.stability - task.requirements.stability : 0;
       const securityPoints = task.status.security - task.requirements.security > 0 ? task.status.security - task.requirements.security : 0;
       const points = task.credits + speedPoints + stabilityPoints + securityPoints;
-      const times = task.bonuses.find((bonus) => bonus === 'oneBeyond') ? 2 : 1;
+			const times = task.bonuses.find(bonus => bonus === 'oneBeyond') ? 2 : 1
       NotificationManager.success(`You won the game with ${points * times} points`, 'Successful deployment', 1000);
       setTask(basicTask);
     }
@@ -89,9 +92,9 @@ const Game = () => {
             </div>
 
             <div className="status-bar">
-              <StatusBar status={task.status.speed} name="speed" />
-              <StatusBar status={task.status.security} name="security" />
-              <StatusBar status={task.status.stability} name="stability" />
+              <StatusBar status={task.status.speed} name="speed" requirement={task.requirements.speed} />
+              <StatusBar status={task.status.security} name="security" requirement={task.requirements.security} />
+              <StatusBar status={task.status.stability} name="stability" requirement={task.requirements.stability} />
             </div>
           </div>
         </div>
