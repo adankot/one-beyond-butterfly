@@ -51,7 +51,7 @@ const Game = () => {
 		<div className="App">
 			<div>
 				<div className="box">
-					<div className="service-container">
+					<div className="task-service-container">
 						services
 					</div>
 					<div className="status-bar">
