@@ -4,7 +4,6 @@ import { StatusBar } from "./components/StatusBar";
 
 function App() {
   const numberOfServices = 6;
-  const numberOfStatuses = 3;
   return (
     <div className="App">
       <body>
@@ -21,9 +20,21 @@ function App() {
                 ))}
               </div>
               <div className="status-bar">
-                {[...Array(numberOfStatuses).keys()].map((i) => (
-                  <StatusBar key={`status_bar__${i}`} StatusBar />
-                ))}
+                <StatusBar
+                  key={`status_bar__security`}
+                  type="security"
+                  currentStatus={4}
+                />
+                <StatusBar
+                  key={`status_bar__speed`}
+                  type="speed"
+                  currentStatus={9}
+                />
+                <StatusBar
+                  key={`status_bar__stability`}
+                  type="stability"
+                  currentStatus={6}
+                />
               </div>
             </div>
           </div>
