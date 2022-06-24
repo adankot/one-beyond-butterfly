@@ -1,9 +1,19 @@
+:root {
+  --ob-green: #338855;
+  --ob-yellow: #CFFF00; 
+  
+/*
+  #CFFF00 #FFFFFF #338855 #E6E1D7 #000000
+  yellow, white, green, off-white and black from new colour branding
+*/
+}
+
 .progress-bar {
   height: 30px;
 }
 
 .progress {
-  background-color: green;
+  background-image: linear-gradient(90deg, var(--ob-yellow), var(--ob-green));
   margin: 5px;
   height: 25px;
   position: relative;
