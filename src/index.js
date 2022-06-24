@@ -7,11 +7,9 @@ import NavigationProvider from './contexts/NavigationContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <NavigationProvider>
-      <App />
-    </NavigationProvider>
-  </React.StrictMode>
+	<NavigationProvider>
+		<App />
+	</NavigationProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,24 +1,17 @@
 import React from "react";
-import ProgressBar from "@ramonak/react-progress-bar";
 import './StatusBar.css'
-import classNames from "classnames";
 
 export const StatusBar = (props) => {
-  const maxStatus = 10;
+	const { status } = props;
 
-  if(props.currentStatus > 10) {
-    return null;
-  }
+	if (props.currentStatus > 10) {
+		return null;
+	}
 
-  return <div>
-    <ProgressBar
-      className='progress-bar'
-      barContainerClassName='bar-container'
-      completedClassName={classNames(props.type)}
-      labelClassName="label"
-      completed={props.currentStatus * 10}
-      isLabelVisible={false}
-      maxCompleted={maxStatus}>
-  </ProgressBar>
-  </div>;
+	return (
+		<div>
+			<div className="stability" style={{ width: status * 10 }}></div>
+			<div className="speed" style={{ width: status * 10 }}></div>
+		</div>
+	);
 };

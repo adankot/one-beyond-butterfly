@@ -1,22 +1,5 @@
 .progress-bar {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
   width: 100px;
-}
-
-body > div > div.task-container > div.task > div.status-bar > div:nth-child(1) {
-  width: 30px;
-}
-
-body > div > div.task-container > div.task > div.status-bar > div:nth-child(2) {
-  width: 30px;
-}
-
-body > div > div.task-container > div.task > div.status-bar > div:nth-child(3) {
-  width: 30px;
 }
 
 .bar-container {
@@ -25,18 +8,18 @@ body > div > div.task-container > div.task > div.status-bar > div:nth-child(3) {
 
 .security {
   background-color: red;
+  margin: 5px;
 }
 
 .speed {
   background-color: green;
+  margin: 5px;
+  height: 25px;
 }
 
 .stability {
   background-color: blue;
-}
-
-.barCompleted {
-  background-color: lightblue;
+  margin: 5px;
 }
 
 .label {
