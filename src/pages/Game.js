@@ -35,6 +35,10 @@ const Game = () => {
 		}
 		// check IAM bonus
 		// check ONE BEYOND bonus
+		if (!task.bonuses.find(name => name === 'oneBeyond') && task.services.filter(service => service.name === 'ec2').length >= 2) {
+			NotificationManager.success('You are above at least 1 point in every requirement (double your points)', 'The ONE BEYOND Bonus', 3000);
+			setTask({ ...task, bonuses: [...task.bonuses, 'oneBeyond'] });
+		}
 	};
 
 	const checkWinConditionAchieved = (task) => {
@@ -46,7 +50,8 @@ const Game = () => {
 			const stabilityPoints = task.status.stability - task.requirements.stability > 0 ? task.status.stability - task.requirements.stability : 0;
 			const securityPoints = task.status.security - task.requirements.security > 0 ? task.status.security - task.requirements.security : 0;
 			const points = task.credits + speedPoints + stabilityPoints + securityPoints;
-			NotificationManager.success(`You won the game with ${points} points`, 'Successful deployment', 1000);
+			const times = task.bonuses.find(bonus => bonus === 'oneBeyond') ? 2 : 1
+			NotificationManager.success(`You won the game with ${points*times} points`, 'Successful deployment', 1000);
 			setTask(basicTask);
 		}
 	};
