@@ -1,5 +1,5 @@
 import React from 'react';
 
-const Haha = () => <div>404 - Haha</div>;
+const Haha = () => <div className="center-page haha">404 - Haha</div>;
 
 export default Haha;

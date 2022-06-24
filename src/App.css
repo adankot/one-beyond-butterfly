@@ -65,7 +65,7 @@
   display: inline-block;
 }
 
-.menu {
+.center-page {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -76,4 +76,8 @@
   flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+.haha {
+  color: red;
 }
