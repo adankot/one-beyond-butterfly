@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/one-beyond-butterfly/static/css/main.a954baac.css",
-    "main.js": "/one-beyond-butterfly/static/js/main.40317ea5.js",
+    "main.js": "/one-beyond-butterfly/static/js/main.221f80ac.js",
     "static/js/787.e63a6d47.chunk.js": "/one-beyond-butterfly/static/js/787.e63a6d47.chunk.js",
     "static/media/notification.svg?s3g3t9": "/one-beyond-butterfly/static/media/notification.5d0158671dd860c714c4.svg",
     "static/media/notification.eot": "/one-beyond-butterfly/static/media/notification.3657084dc0419605a91c.eot",
@@ -9,11 +9,11 @@
     "static/media/notification.ttf?s3g3t9": "/one-beyond-butterfly/static/media/notification.c5d9251ea82e42f75381.ttf",
     "index.html": "/one-beyond-butterfly/index.html",
     "main.a954baac.css.map": "/one-beyond-butterfly/static/css/main.a954baac.css.map",
-    "main.40317ea5.js.map": "/one-beyond-butterfly/static/js/main.40317ea5.js.map",
+    "main.221f80ac.js.map": "/one-beyond-butterfly/static/js/main.221f80ac.js.map",
     "787.e63a6d47.chunk.js.map": "/one-beyond-butterfly/static/js/787.e63a6d47.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a954baac.css",
-    "static/js/main.40317ea5.js"
+    "static/js/main.221f80ac.js"
   ]
 }
