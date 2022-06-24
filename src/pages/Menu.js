@@ -21,7 +21,6 @@ const Menu = () => {
       <button className="button-22" onClick={handlePLayClick}>
         Play
       </button>
-      <Button onClick={() => {}}></Button>
     </div>
   );
 };
