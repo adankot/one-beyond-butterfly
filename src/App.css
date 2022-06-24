@@ -64,3 +64,9 @@
   width: 35%;
   display: inline-block;
 }
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
